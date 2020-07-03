@@ -1,0 +1,61 @@
+.container{
+    display: flex;
+    /* ต้องใช้คำสั่ง  display: flex; ก่อนเสมอ 
+    เพื่อจัดรูปแบบ flex ใน container */
+
+
+    /* flex-direction: column ; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+
+
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /* wrap คือ การม้วนลงมา ถ้าสุดจอแล้ว */
+
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: row wrap; */
+    /* flex-flow: column wrap; */
+    /* flex-flow: column wrap-reverse; */
+
+
+    /* justify-content must have flex-wrap before*/
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+
+}
+
+/* การใช้ flex ต้องกำหนด margin แทน grid-gap */
+
+.container > div {
+    background-color: lightsalmon;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.item5{
+    /* order: -1; */
+    /* div 5 จะวิ่งมาอยู่อยู่ข้างหน้า */
+
+    /* order: 1; */
+    /* div 5 จะวิ่งไปอยู่หลังสุด */
+
+    /* default order = 0 */
+
+    /* flex-grow: 30; */
+    /* โต จำนวนกี่เท่า*/
+    /* flex-shrink: 50; */
+    /* หด จำนวนกี่เท่า*/
+    flex-basis: 400px;
+    /* ตั้งค่าเริ่มต้นขนาดของกล่องflex */
+
+    flex: 30 50;
+    /* shorthand ของ flex   โต  หด  ค่าเริ่มต้น*/
+
+}

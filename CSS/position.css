@@ -1,0 +1,99 @@
+.flex {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* align-items: center;
+      justify-content: center; */
+  }
+  
+  .flex > div {
+    width: 20vw;
+    height: 20vh;
+    text-align: center;
+    background-color: aqua;
+    margin: 30px;
+  }
+  
+  .flex > .item3 {
+    width: 20vw;
+    height: 20vh;
+    text-align: center;
+    background-color: lightsteelblue;
+
+    /* position: relative; */
+    /* ต้องใช้คำสั่งนี้ก่อน */
+
+    /* absolute กับ relative 
+    ต้องมาพร้อมกับคำสั่ง top buttom right left อย่างน้อย1อันนะ */
+
+
+    /* top: 0px; */
+    /* top: 200px; */
+    /* ดันกล่องจากบนลงมา เท่าไร */
+    /* bottom: 100px; */
+    /* right: 100px; */
+    /* left: 200px; */
+
+    /* position: fixed; */
+    /* fixed จะอยู่ค้าง เลื่อนตามหน้าจอ */
+    /* top: 100px; */
+    /* left: 100px; */
+
+    /* position: absolute; */
+    /* อยู่ค้าง ไม่เลื่อนตามหน้าจอ */
+    /* top: 100px; */
+    /* left: 100px; */
+
+    
+
+  }
+  
+  .container {
+    display: flex;
+    flex: row;
+    width: 100vh;
+    height: 500vh;
+    align-items: flex-start;
+    /* ต้องใช้ align-items: flex-start; เข้าช่วยเพื่อให้ 
+    div 3 กล่อง ชิดข้างบน*/
+  }
+  
+  .container > div {
+    width: 400px;
+    margin: 50px;
+    position: sticky;
+    top: 0;
+
+    /* sticky คือ เวลาเลื่อจอ แล้วอยากให้ทั้ง 3 กล่อง div 
+    อยู่ในหน้าจอเดียวกัน เสมอ*/
+    
+  }
+  
+  .container > .item1 {
+    height: 490vh;
+    background-color: cadetblue;
+  }
+  .container > .item2 {
+    height: 230vh;
+    background-color: chocolate;
+  }
+  
+  .container > .item3 {
+    height: 350vh;
+    background-color: darkgoldenrod;
+    
+  }
+  
+  img {
+    display: block;
+    margin: auto;
+
+    z-index: -1;
+    /* จัดตำแหน่ง 1 อยู่หน้า  -1 อยู่หลัง 
+    เหมือนการแยกชั้นการแสดงผลออกมา*/
+
+    /* position: relative; */
+    /* top: 200px; */
+    position: sticky;
+    top: 0;
+  }
