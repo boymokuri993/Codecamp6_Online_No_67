@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Edit Version 2</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        .mainContainer {
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+            .fBox {
+                display: flex;
+                flex-direction: column;
+                border: solid 1px rgb(197, 186, 186);
+                border-radius: 5px;
+                padding-top: 40px;
+                
+            }
+
+            .txtCur {
+                color: red;
+            }
+
+            .box{
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            .box-row {
+                padding: 20px;
+            }
+
+            .footer {
+                background-color: seashell;
+                border-top: 1px solid rgb(245, 217, 217);
+            }
+
+            .boxG1 select , input{
+                border: 1px solid #bbbbbb;
+                border-radius: 3px;
+                padding: 5px; 
+
+            }
+
+            .boxG2 {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: 0;
+            }
+
+            .boxG2 input {
+                border: 1px solid #bbbbbb;
+                border-radius: 3px;
+                padding: 5px;
+            }
+
+            .boxG2 select {
+                border-radius: 3px;
+                border: solid 1px #bbbbbb;
+                width: 80px;
+                padding: 5px;
+            }
+
+            .g2 {
+                margin-right: 10px;
+            }
+
+            
+        button {
+            border: solid 1px red;
+            padding: 7px 24px;
+            background-image: linear-gradient(orange,red);
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+                       
+        }  
+
+        label {
+            line-height: 1.4;
+        }  
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="mainContainer">
+        <form action="#" class="fBox">
+            <div class="box">
+                <div class="box-row boxG1">
+                    <label>Flying From</label><br>
+                        <select name="flyingFrom">
+                            <option value="newYork1">NewYork, USA.1</option>
+                            <option value="newYork2">NewYork, USA.2</option>
+                            <option value="newYork3">NewYork, USA.3</option>
+                            <option value="newYork4">NewYork, USA.4</option>
+                            <option value="newYork5">NewYork, USA.5</option>
+                        </select>
+                </div>
+                <div class="box-row boxG1">
+                    <label>To</label><br>
+                    <select name="to">
+                        <option value="bangKok1">BangKok1</option>
+                        <option value="bangKok2">Bangkok2</option>
+                        <option value="bangKok3">Bangkok3</option>
+                        <option value="bangKok4">Bangkok4</option>
+                        <option value="bangKok5">Bangkok5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="box">               
+                    <div class="box-row boxG1">
+                        <label>Departing:</label><br>
+                        <input type="date" name="deParting">
+                    </div>
+                    <div class="box-row">
+                        <label>Returning:</label><br>
+                        <input type="date" name="reTurning">
+                    </div>               
+            </div>
+
+
+            <div class="box">
+                <div class="box-row boxG2">
+                    <div class="g2">
+                        <label>Adult</label><br>
+                        <input type="number" name="adult" value="1" min="0" max="100">
+                    </div>
+                    <div class="g2">
+                        <label>Child</label><br>
+                        <input type="number" name="child" value="0" min="0" max="100">
+                    </div>
+                    <div class="g2">
+                        <label>Infant</label><br>
+                        <input type="number" name="infant" value="0" min="0" max="100">
+                    </div>
+                    <div>
+                        <div class="g2">
+                        <label class="txtCur">Currency</label><br>
+                        <select name="currency">
+                            <option value="usd">USD</option>
+                            <option value="eur">EUR</option>
+                            <option value="gbp">GBP</option>
+                            <option value="jpy">JPY</option>
+                            <option value="chf">CHF</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="box-row">
+                    <button type="button">Search</button>
+                </div>
+            </div>
+
+
+        </form>
+
+        
+    </div>
+
+    
+</body>
+</html>
